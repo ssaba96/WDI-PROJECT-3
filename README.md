@@ -1,5 +1,8 @@
 # Project 3
 ## A MEAN Stack App
 
-- Saba Shanaa
+- Saba Shanaaz
 - Chavez King
+
+
+This project is about horses dwf
