@@ -23,4 +23,4 @@ module.exports = {
   login
 };
 
-xsdd
+xs
