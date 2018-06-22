@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@uirouter/angularjs@^1.0.18":
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/@uirouter/angularjs/-/angularjs-1.0.18.tgz#7ec481921c0c66dc93442b340779d733a49b0214"
+  dependencies:
+    "@uirouter/core" "5.0.19"
+
+"@uirouter/core@5.0.19":
+  version "5.0.19"
+  resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-5.0.19.tgz#fe2888190393a8c92584c354e65ab8322c1b0db4"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -70,6 +80,10 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+angular-messages@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/angular-messages/-/angular-messages-1.7.2.tgz#77116d83a72a00234d8177de9837bc867321f25e"
 
 angular@^1.6.0:
   version "1.6.9"
