@@ -1,7 +1,8 @@
 const router = require('express').Rotuer();
 const auth = require('../controllers/auth');
-const museums = require('../controllers/musuems');
 
+const secureRoute = require('../lib/secureRoute');
+const museums = require('../controllers/musuems');
 
 router.route('museums')
   .get(museums.index)
@@ -10,3 +11,6 @@ router.route('museums')
 
 router.get('/register', auth.register);
 router.post('/login', auth.login);
+
+
+router.get('/profile', secureRoute, auth.profile);

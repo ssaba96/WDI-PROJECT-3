@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 const { port, dbURI } = require('./config/environment');
 
@@ -8,7 +9,14 @@ mongoose.Promise = require('bluebird');
 
 mongoose.connect(dbURI);
 
+const routes = require('./config/routes');
 
+app.use(express.static(`${__dirname}/public`));
+
+app.use(bodyParser.json());
+app.use('api', routes);
+
+// app.use(errorHandler);
 
 
 

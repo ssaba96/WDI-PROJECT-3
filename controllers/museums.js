@@ -13,7 +13,20 @@ function showRoute(req, res, next) {
 
 }
 
+function commentCreateRoute(req, res, next) {
+  req.body.author = req.currentUser;
+  Museum.findById(req.params.id)
+    .populate('comments.author')
+    .then(museum => {
+      museum.comments.push(req.body);
+      return museum.save();
+    })
+    .then(museum => res.json(museum))
+    .catch(next);
+}
+
 module.exports = {
   index: indexRoute,
-  show: showRoute
+  show: showRoute,
+  commentCreat: commentCreateRoute
 };
