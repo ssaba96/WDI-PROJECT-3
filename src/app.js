@@ -6,7 +6,7 @@ import Router from './config/routes';
 // import Auth from './config/satellizer';
 
 
-import MuseumsIndexCtrl from '.controllers/museums/index';
+import MuseumsIndexCtrl from './controllers/museums/index';
 import MuseumsShowCtrl from './controllers/museums/show';
 
 import AuthLoginCtrl from './controllers/auth/login';
