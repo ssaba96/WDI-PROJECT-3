@@ -15,7 +15,8 @@ function login(req, res, next) {
       if(!user || !user.validatePassword(req.body.password)) {
         return res.status(401).json({ message: 'Unauthorized'});
       }
-    });
+    })
+    .catch(next);
 }
 
 module.exports = {
