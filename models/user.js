@@ -1,10 +1,26 @@
 const mongoose = require('mongoose');
-// const bcrpyt = require('bcrypt');
+const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true},
   email: { type: String, required: true},
   password: { type: String, required: true}
+}, {
+  id: false
+});
+
+userSchema.virtual('museums', {
+  localField: '_id',
+  foreignField: 'owner',
+  ref: 'museum'
+});
+
+userSchema.set('toJSON', {
+  virtuals: true,
+  transform(doc, json) {
+    delete json.password;
+    return json;
+  }
 });
 
 
@@ -19,3 +35,17 @@ userSchema.pre('validate', function checkPasswordMatch(next){
   }
   next();
 });
+
+userSchema.pre('save', function hashPassword(next) {
+  if(this.isModified('password')) {
+    this.password = bcrypt.hashSync(this.password,
+      bcrypt.genSaltSync(8));
+  }
+  next();
+});
+
+userSchema.methods.validatePassword = function validatePassword(password) {
+  return bcrypt.compareSync(password, this.password);
+};
+
+module.exports = mongoose.model('User', userSchema);
