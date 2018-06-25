@@ -21,6 +21,10 @@ function MainCtrl($scope, $auth, $state, $rootScope, $timeout, $transitions) {
     $auth.logout();
     $state.go('home');
   };
+  $scope.profile = function() {
+    $auth.profile();
+    $state.go('/profile');
+  };
 }
 
 export default MainCtrl;

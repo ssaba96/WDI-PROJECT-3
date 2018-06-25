@@ -4,6 +4,14 @@ function Router($stateProvider, $urlRouterProvider) {
       url: '/',
       templateUrl: './views/home.html'
     })
+    .state('profileShow', {
+      url: '/profile',
+      templateUrl: './views/auth/profile.html'
+    })
+    .state('profileEdit', {
+      url: '/profile/edit',
+      templateUrl: './views/auth/profile.html'
+    })
     .state('museumsIndex', {
       url: '/museums',
       templateUrl: './views/museums/index.html',
