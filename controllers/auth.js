@@ -29,8 +29,16 @@ function login(req, res, next) {
     .catch(next);
 }
 
-function profile(req, res, next) {
+function profileShow(req, res, next) {
   User.populate(req.currentUser, { path: 'museums' })
+    .then(user => res.json(user))
+    .catch(next);
+}
+
+function profileUpdate(req, res, next) {
+  req.currentUser.set(req.body);
+
+  req.currentUser.save()
     .then(user => res.json(user))
     .catch(next);
 }
@@ -38,5 +46,6 @@ function profile(req, res, next) {
 module.exports = {
   register,
   login,
-  profile
+  profileShow,
+  profileUpdate
 };
