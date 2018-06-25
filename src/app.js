@@ -5,6 +5,9 @@ import 'angular-messages';
 import 'filepicker-js';
 import 'angular-filepicker/dist/angular_filepicker';
 
+import 'bulma';
+import './scss/style.scss';
+
 import Router from './config/routes';
 import Auth from './config/satellizer';
 import Upload from './config/filepicker';
@@ -16,7 +19,9 @@ import MuseumsShowCtrl from './controllers/museums/show';
 import AuthLoginCtrl from './controllers/auth/login';
 import AuthRegisterCtrl from './controllers/auth/register';
 
+import bulmaCard from './directives/bulmaCard';
 import filePicker from './directives/filePicker';
+
 
 
 
@@ -48,4 +53,5 @@ angular.module('museumsApi', [
   .controller('AuthRegisterCtrl', AuthRegisterCtrl)
   .controller('MuseumsIndexCtrl', MuseumsIndexCtrl)
   .controller('MuseumsShowCtrl', MuseumsShowCtrl)
-  .directive('filePicker', filePicker);
+  .directive('filePicker', filePicker)
+  .directive('bulmaCard', bulmaCard);
