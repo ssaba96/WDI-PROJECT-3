@@ -28,7 +28,7 @@ import AuthRegisterCtrl from './controllers/auth/register';
 
 
 
-angular.module('museumsApp', [
+angular.module('museumsApi', [
   'ui.router',
   'ngMessages'
 ])
