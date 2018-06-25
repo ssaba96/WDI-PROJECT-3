@@ -22,7 +22,7 @@ mongoose.connect(dbURI, (err, db) => {
       }, {
         name: 'London Science Museum',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/science-image.jpg'
+        image: '/assets/science-images.jpeg'
       }]);
     })
 
