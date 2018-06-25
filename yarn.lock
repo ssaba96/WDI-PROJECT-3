@@ -2298,6 +2298,12 @@ file-loader@^1.1.8:
     loader-utils "^1.0.2"
     schema-utils "^0.4.5"
 
+file-picker@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/file-picker/-/file-picker-0.1.8.tgz#76fda824775844fd1c3e6ab8a1332d4d0d4ba6bb"
+  dependencies:
+    unorm ">=1.0.0"
+
 filename-regex@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/filename-regex/-/filename-regex-2.0.1.tgz#c1c4b9bee3e09725ddb106b75c1e301fe2f18b26"
@@ -6191,6 +6197,10 @@ unique-slug@^2.0.0:
   resolved "https://registry.yarnpkg.com/unique-slug/-/unique-slug-2.0.0.tgz#db6676e7c7cc0629878ff196097c78855ae9f4ab"
   dependencies:
     imurmurhash "^0.1.4"
+
+unorm@>=1.0.0:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/unorm/-/unorm-1.4.1.tgz#364200d5f13646ca8bcd44490271335614792300"
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
