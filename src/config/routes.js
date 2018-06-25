@@ -1,5 +1,21 @@
 function Router($stateProvider, $urlRouterProvider) {
   $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: './views/home.html',
+      controller: 'HomeCtrl'
+    })
+    .state('museumsIndex', {
+      url: '/museums',
+      templateUrl: './views/museums/index.html',
+      controller: 'MuseumsIndexCtrl',
+      params: { search: null }
+    })
+    .state('museumsShow', {
+      url: '/museums/:id',
+      templateUrl: './views/museums/show.html',
+      controller: 'MuseumsShowCtrl'
+    })
     .state('login', {
       url: '/login',
       templateUrl: './views/auth/login.html',

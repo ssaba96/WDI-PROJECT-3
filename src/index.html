@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="museumsApp">
 <head>
   <meta charset="utf-8">
   <title>WDI32 Group Project</title>
 </head>
-<body>
+<body ng-controller="MainCtrl">
 
   <h1>WDI32 Group Project</h1>
+
+      <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
+        <div class="navbar-end">
+          <a class="navbar-item" ui-sref="register">Register</a>
+        </div>
+      </div>
 
 </body>
 </html>

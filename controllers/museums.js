@@ -28,5 +28,5 @@ function commentCreateRoute(req, res, next) {
 module.exports = {
   index: indexRoute,
   show: showRoute,
-  commentCreat: commentCreateRoute
+  commentCreate: commentCreateRoute
 };

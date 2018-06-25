@@ -14,10 +14,12 @@ const routes = require('./config/routes');
 app.use(express.static(`${__dirname}/public`));
 
 app.use(bodyParser.json());
-app.use('api', routes);
+app.use('/api', routes);
 
 // app.use(errorHandler);
 
 
 
 app.listen(port, ()=> console.log(`Enjoy the show!${port}`));
+
+module.exports = app;
