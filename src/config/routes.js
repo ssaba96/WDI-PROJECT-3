@@ -2,8 +2,7 @@ function Router($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: './views/home.html',
-      controller: 'HomeCtrl'
+      templateUrl: './views/home.html'
     })
     .state('museumsIndex', {
       url: '/museums',

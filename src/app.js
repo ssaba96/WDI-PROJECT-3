@@ -1,5 +1,6 @@
 import angular from 'angular';
 import '@uirouter/angularjs';
+import 'satellizer';
 import 'angular-messages';
 
 import Router from './config/routes';
@@ -28,8 +29,9 @@ import AuthRegisterCtrl from './controllers/auth/register';
 
 
 
-angular.module('museumsApp', [
+angular.module('museumsApi', [
   'ui.router',
+  'satellizer',
   'ngMessages'
 ])
   .config(Router)

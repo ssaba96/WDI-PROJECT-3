@@ -1,0 +1,11 @@
+<div class="columns is-multiline">
+  <div class="column is-one-third-desktop is-half-tablet" ng-repeat="museum in museums | filter: search | orderBy: sort">
+
+    <a ui-sref="museumsShow({ id: museum._id })">
+
+      <bulma-card image="museum.image" title="museum.name"></bulma-card>
+
+    </a>
+
+  </div>
+</div>
