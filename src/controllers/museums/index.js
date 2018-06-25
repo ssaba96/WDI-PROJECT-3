@@ -1,6 +1,4 @@
-function MuseumsIndexCtrl($scope, $http, $stateParams) {
-  $scope.search = $stateParams.search || '';
-  $scope.sort = 'name';
+function MuseumsIndexCtrl($http, $scope) {
 
   $http({
     method: 'GET',
