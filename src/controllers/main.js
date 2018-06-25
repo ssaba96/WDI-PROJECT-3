@@ -28,3 +28,5 @@ function MainCtrl($scope, $auth, $state, $rootScope, $timeout, $transitions) {
 }
 
 export default MainCtrl;
+
+console.log('something');
