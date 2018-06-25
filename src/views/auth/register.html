@@ -37,8 +37,18 @@
       <small ng-message="required">This field is required</small>
       <small ng-message="pattern">Passwords do not match</small>
     </div>
-
   </div>
 
-  <button class="button" ng-disabled="form.$invalid">Submit</button>
-</form>
+    <div class="field">
+      <label class="label" for="avatar">Avatar</label>
+      <a><img ng-src="{{ data.avatar }}" src="/assets/default-avatar.png" alt="" file-picker ng-model="data.avatar"></a>
+      <p>Choose Your Avatar</p>
+      <!-- <button class="button" name="avatar" id="avatar" ng-model="data.avatar" file-picker ng-model="data.avatar" required/>Choose Your Avatar</button> -->
+
+      <div ng-messages="form.avatar.$error" ng-if="form.avatar.$dirty">
+        <small ng-message="required">This field is required</small>
+      </div>
+    </div>
+
+    <button class="button" ng-disabled="form.$invalid">Submit</button>
+  </form>

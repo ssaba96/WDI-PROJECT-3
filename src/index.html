@@ -19,8 +19,9 @@
 
       <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
         <div class="navbar-end">
+          <img ng-src="currentUser.avatar" alt="user's avatar">
+          <span>Hi there {{ currentUser.username }}</span>
           <a class="navbar-item" ui-sref="museumsIndex">All the museums</a>
-          <a class="navbar-item" ui-sref="profileShow" ng-if="isAuthenticated()" file-picker ng-model="data.image">Choose Your Avatar</a>
           <a class="navbar-item" ui-sref="login" ng-if="!isAuthenticated()">Login</a>
           <a class="navbar-item" ui-sref="register" ng-if="!isAuthenticated()">Register</a>
           <a class="navbar-item" ng-click="logout()" ng-if="isAuthenticated()">Logout</a>

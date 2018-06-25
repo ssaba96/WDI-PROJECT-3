@@ -13,11 +13,12 @@ function register(req, res, next) {
 function login(req, res, next) {
   User.findOne({ email: req.body.email })
     .then(user => {
+      console.log(user);
       if(!user || !user.validatePassword(req.body.password)) {
         return res.status(401).json({ message: 'Unauthorized'});
       }
 
-      const token = jwt.sign({ sub: user.id}, secret, { expiresIn: '6h'});
+      const token = jwt.sign({ sub: user._id, avatar: user.avatar, username: user.username }, secret, { expiresIn: '6h'});
 
       res.json({
         user,

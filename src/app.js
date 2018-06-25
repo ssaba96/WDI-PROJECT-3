@@ -23,22 +23,6 @@ import bulmaCard from './directives/bulmaCard';
 import filePicker from './directives/filePicker';
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 angular.module('museumsApi', [
   'ui.router',
   'satellizer',
