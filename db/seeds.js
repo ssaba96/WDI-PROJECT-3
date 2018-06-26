@@ -21,7 +21,7 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'London',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/london-history-museum.jpg'
-      }, { m
+      }, { 
         name: 'London Science Museum',
         category: 'science',
         address: 'London',
