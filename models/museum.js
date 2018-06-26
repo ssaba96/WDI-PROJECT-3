@@ -6,7 +6,9 @@ const museumSchema = new mongoose.Schema({
     lat: { type: Number },
     lng: { type: Number }
   },
-  name: { type: String, required: true }
+  name: { type: String, required: true },
+  category: { type: String, required: true },
+  address: { type: String, required: true }
 
 });
 
