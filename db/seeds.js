@@ -17,20 +17,28 @@ mongoose.connect(dbURI, (err, db) => {
       console.log('User created');
       return Museum.create([{
         name: 'London History Museum',
+        category: 'science',
+        address: 'London',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/london-history-museum.jpg'
       }, {
         name: 'London Science Museum',
+        category: 'science',
+        address: 'London',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/science-images.jpeg'
       },{
-        name: 'London Art Museum',
+        name: 'London Science Museum',
+        category: 'science',
+        address: 'London',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/team-art-museum-hebe_02.jpg'
       },{
-        name: 'London Childhood Museum',
+        name: 'London Art Museum',
+        category: 'science',
+        address: 'London',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/london-natural-history-museum-earth-galleries.jpg'
+        image: 'assets/london-natural-history-museum-earth-galleries.jpg'
 
       }]);
     })
