@@ -17,7 +17,7 @@ router.post('/register', auth.register);
 router.post('/login', auth.login);
 
 
-router.route('/profile')
+router.route('/profile/:userId')
   .get(secureRoute, auth.profileShow)
   .put(secureRoute, auth.profileUpdate);
 

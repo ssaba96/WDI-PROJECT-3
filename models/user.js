@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
 userSchema.virtual('museums', {
   localField: '_id',
   foreignField: 'owner',
-  ref: 'museum'
+  ref: 'Museum'
 });
 
 userSchema.set('toJSON', {

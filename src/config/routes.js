@@ -1,3 +1,16 @@
+function secureState($q, $state, $auth, $rootScope) {
+  return new $q(resolve => {
+    if($auth.isAuthenticated()) return resolve();
+
+    $rootScope.$broadcast('flashMessage', {
+      type: 'warning',
+      content: 'Please log in'
+    });
+
+    $state.go('login');
+  });
+}
+
 function Router($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
@@ -5,12 +18,14 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: './views/home.html'
     })
     .state('profileShow', {
-      url: '/profile',
-      templateUrl: './views/auth/profile.html'
+      url: '/profile/:userId',
+      templateUrl: './views/auth/profileShow.html',
+      controller: 'ProfileShowCtrl',
+      resolve: { secureState }
     })
     .state('profileEdit', {
       url: '/profile/edit',
-      templateUrl: './views/auth/profile.html'
+      templateUrl: './views/auth/profileEdit.html'
     })
     .state('museumsIndex', {
       url: '/museums',
