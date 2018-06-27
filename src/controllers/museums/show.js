@@ -1,7 +1,6 @@
-function ProfileShowCtrl($scope, $http, $state) {
+function MuseumsShowCtrl($scope, $http, $state) {
 
   $scope.data = {};
-
 
   $http({
     method: 'GET',
@@ -12,4 +11,4 @@ function ProfileShowCtrl($scope, $http, $state) {
     });
 }
 
-export default ProfileShowCtrl;
+export default MuseumsShowCtrl;

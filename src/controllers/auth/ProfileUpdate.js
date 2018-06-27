@@ -1,4 +1,4 @@
-function ProfileUpdateCtrl($http, $scope) {
+function AuthProfileUpdateCtrl($http, $scope) {
 
   $http({
     method: 'GET',
@@ -7,4 +7,4 @@ function ProfileUpdateCtrl($http, $scope) {
     .then(res => $scope.museums = res.data);
 }
 
-export default ProfileUpdateCtrl;
+export default AuthProfileUpdateCtrl;

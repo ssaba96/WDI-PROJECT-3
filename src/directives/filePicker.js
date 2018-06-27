@@ -11,10 +11,7 @@ function filePicker(filepickerService) {
           accept: 'image/*',
           maxFiles: 1,
           transformations: { crop: { force: true, aspectRatio: 3/2 } }
-        }, data => {
-          console.log(data);
-          ngModel.$setViewValue(data.url);
-        });
+        }, data => ngModel.$setViewValue(data.url));
       });
 
     }

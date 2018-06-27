@@ -19,7 +19,7 @@
 
     <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
       <div class="navbar-end">
-        <a class="navbar-item" ui-sref="profileShow({ chavez: currentUser.sub })" ng-if="isAuthenticated()">Hi there {{ currentUser.username }}
+        <a class="navbar-item" ui-sref="profileShow({ userId: currentUser._id })" ng-if="isAuthenticated()">Hi there {{ currentUser.username }}
           <img ng-src="{{ currentUser.avatar }}" alt="user's avatar"></a>
           <a class="navbar-item" ui-sref="museumsIndex">All the museums</a>
           <a class="navbar-item" ui-sref="login" ng-if="!isAuthenticated()">Login</a>
