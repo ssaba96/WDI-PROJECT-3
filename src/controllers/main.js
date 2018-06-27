@@ -27,8 +27,7 @@ function MainCtrl($scope, $auth, $state, $rootScope, $timeout, $transitions) {
     $auth.profile();
     $state.go('/profile');
   };
+
 }
 
 export default MainCtrl;
-
-console.log('something');
