@@ -1,5 +1,11 @@
-<h2 class="title">Username: {{ user.username }}</h2>
+<h2 class="title">Your Profile</h2>
+<ul>
+<li>Username: {{ user.username }}</li>
+<li>Email: {{ user.email }}</li>
+</ul>
 <hr />
-<img ng-src="{{ user.avatar }}">
-
+<img id="userimage" ng-src="{{ user.avatar }}">
+<br>
 <button file-picker ng-model="data.avatar">Change Avatar</button>
+<hr>
+<h3 class="title">Comment Uploads</h3>
