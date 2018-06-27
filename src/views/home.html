@@ -2,12 +2,9 @@
   <div class="">
     <div class="container">
 
-
       <ui-carousel slides="museums" ng-if="museums" autoplay="true" fade="true" autoplay-speed="2000" >
         <carousel-item>
-          <a ui-sref="museumsShow({ id:museum._id })">
-            <img ng-src="{{ image }}" alt="{{ title }}" />
-          </a>
+          <img ng-src="{{ item.image }}" alt="{{ item.name }}" />
         </carousel-item>
       </ui-carousel>
 

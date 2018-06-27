@@ -4,8 +4,8 @@ import 'satellizer';
 import 'angular-messages';
 import 'filepicker-js';
 import 'angular-filepicker/dist/angular_filepicker';
-// import 'angular-ui-carousel';
-// import 'angular-ui-carousel/dist/ui-carousel.css';
+import 'angular-ui-carousel';
+import 'angular-ui-carousel/dist/ui-carousel.css';
 
 import 'bulma';
 import './scss/style.scss';
@@ -16,6 +16,7 @@ import Upload from './config/filepicker';
 
 
 import MainCtrl from './controllers/main';
+import HomeCtrl from './controllers/home';
 import MuseumsIndexCtrl from './controllers/museums/index';
 import MuseumsShowCtrl from './controllers/museums/show';
 import AuthLoginCtrl from './controllers/auth/login';
@@ -31,14 +32,15 @@ angular.module('museumsApi', [
   'ui.router',
   'satellizer',
   'ngMessages',
-  'angular-filepicker'
-  // 'ui-carousel'
+  'angular-filepicker',
+  'ui.carousel'
 
 ])
   .config(Router)
   .config(Auth)
   .config(Upload)
   .controller('MainCtrl', MainCtrl)
+  .controller('HomeCtrl', HomeCtrl)
   .controller('AuthLoginCtrl', AuthLoginCtrl)
   .controller('ProfileShowCtrl', ProfileShowCtrl)
   .controller('AuthRegisterCtrl', AuthRegisterCtrl)
