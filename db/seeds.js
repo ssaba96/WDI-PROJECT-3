@@ -16,55 +16,56 @@ mongoose.connect(dbURI, (err, db) => {
     .then(() => {
       console.log('User created');
       return Museum.create([{
-        name: 'Art',
-        category: 'science',
-        address: 'London',
+        name: 'London Art Museum',
+        category: 'Art',
+        address: 'Address: Trafalgar Square, London',
+        postcode: 'WC2N 5DN',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png'
       }, {
-        name: 'History',
-        category: 'science',
-        address: 'London',
+        name: 'The Bristish Museum',
+        category: 'History',
+        address: 'Great Russell St, Bloomsbury, London',
+        postcode: 'WC1B 3DG',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/History/Bristish-Museum/FrontPage-british-museum.jpg'
       },{
-        name: 'Science',
+        name: 'Museum of the History of Science',
         category: 'science',
-        address: 'London',
+        address: 'Broad St, Oxford',
+        postcode: 'OX1 3AZ',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg'
+      },{
+        name: 'victoria and albert',
+        category: 'Art',
+        address: 'Cromwell Rd, Knightsbridge, London',
+        postcode: 'SW7 2RL',
+        location: { lat: 51.506724, lng: -0.080987 },
+        image: '/assets/Museum/Art/V&A/frontPage-V&A.jpg'
+
+      },{
+        name: 'National Museum Cardiff',
+        category: 'History',
+        address: 'Cathays Park, Cardiff',
+        postcode: 'CF10 3NP',
+        location: { lat: 51.506724, lng: -0.080987 },
+        image: '/assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg'
+      },{
+        name: 'Winchester Science',
+        category: 'science',
+        address: 'Address: Telegraph Way, Winchester',
+        postcode: 'SO21 1HZ',
+        location: { lat: 51.506724, lng: -0.080987 },
+        image: '/assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg'
+      },{
+        name: 'Wallace Collection',
+        category: 'Art',
+        address: 'Hertford House, Manchester Square, London',
+        postcode: 'W1U 3BN',
+        location: { lat: 51.506724, lng: -0.080987 },
+        image: '/assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg'
       }
-      //   name: 'London Art Museum',
-      //   category: 'science',
-      //   address: 'London',
-      //   location: { lat: 51.506724, lng: -0.080987 },
-      //   image: ''
-      //
-      // },{
-      //   name: 'London Art Museum',
-      //   category: 'science',
-      //   address: 'London',
-      //   location: { lat: 51.506724, lng: -0.080987 },
-      //   image: ''
-      // },{
-      //   name: 'London Art Museum',
-      //   category: 'science',
-      //   address: 'London',
-      //   location: { lat: 51.506724, lng: -0.080987 },
-      //   image: ''
-      // },{
-      //   name: 'London Art Museum',
-      //   category: 'science',
-      //   address: 'London',
-      //   location: { lat: 51.506724, lng: -0.080987 },
-      //   image: ''
-      // },{
-      //   name: 'London Art Museum',
-      //   category: 'science',
-      //   address: 'London',
-      //   location: { lat: 51.506724, lng: -0.080987 },
-      //   image: ''
-      // },{
       //   name: 'London Art Museum',
       //   category: 'science',
       //   address: 'London',
