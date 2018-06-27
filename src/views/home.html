@@ -6,12 +6,11 @@
       <ui-carousel slides="museums" ng-if="museums" autoplay="true" fade="true" autoplay-speed="2000" >
         <carousel-item>
           <a ui-sref="museumsShow({ id:museum._id })">
-            <bulm-card image="item.image" title="item.name"</bulmaCard>
-
+            <img ng-src="{{ image }}" alt="{{ title }}" />
           </a>
         </carousel-item>
       </ui-carousel>
-      
+
     </div>
   </div>
 </section>
