@@ -17,7 +17,9 @@ import MainCtrl from './controllers/main';
 import MuseumsIndexCtrl from './controllers/museums/index';
 import MuseumsShowCtrl from './controllers/museums/show';
 import AuthLoginCtrl from './controllers/auth/login';
+import ProfileShowCtrl from './controllers/auth/profileShow';
 import AuthRegisterCtrl from './controllers/auth/register';
+
 
 import bulmaCard from './directives/bulmaCard';
 import filePicker from './directives/filePicker';
@@ -34,6 +36,7 @@ angular.module('museumsApi', [
   .config(Upload)
   .controller('MainCtrl', MainCtrl)
   .controller('AuthLoginCtrl', AuthLoginCtrl)
+  .controller('ProfileShowCtrl', ProfileShowCtrl)
   .controller('AuthRegisterCtrl', AuthRegisterCtrl)
   .controller('MuseumsIndexCtrl', MuseumsIndexCtrl)
   .controller('MuseumsShowCtrl', MuseumsShowCtrl)

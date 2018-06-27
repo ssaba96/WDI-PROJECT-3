@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html ng-app="museumsApi" class="has-navbar-fixed-top">
-  <head>
-    <meta charset="utf-8">
-    <title>MUSEUMS!</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdsDypPEp9X7T8qg-p41_pz_c2EYsqr8Y&libraries=places"></script>
-  </head>
-  <body ng-controller="MainCtrl">
-    <nav class="navbar is-fixed-top">
-      <div class="navbar-brand">
-        <a class="navbar-item" ui-sref="home"> MUSEUMS </a>
+<head>
+  <meta charset="utf-8">
+  <title>MUSEUMS!</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdsDypPEp9X7T8qg-p41_pz_c2EYsqr8Y&libraries=places"></script>
+</head>
+<body ng-controller="MainCtrl">
+  <nav class="navbar is-fixed-top">
+    <div class="navbar-brand">
+      <a class="navbar-item" ui-sref="home"> MUSEUMS </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" ng-class="{ 'is-active': navbarOpen }" ng-click="toggleMenu()">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" ng-class="{ 'is-active': navbarOpen }" ng-click="toggleMenu()">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-      <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
-        <div class="navbar-end">
-          <span class="navbar-item" ng-if="isAuthenticated()">Hi there {{ currentUser.username }}
-          <a><img ng-src="{{ currentUser.avatar }}" file-picker ng-model="data.avatar" alt="user's avatar"></a>
-          </span>
+    <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
+      <div class="navbar-end">
+        <a class="navbar-item" ui-sref="profileShow({ chavez: currentUser.sub })" ng-if="isAuthenticated()">Hi there {{ currentUser.username }}
+          <img ng-src="{{ currentUser.avatar }}" alt="user's avatar"></a>
           <a class="navbar-item" ui-sref="museumsIndex">All the museums</a>
           <a class="navbar-item" ui-sref="login" ng-if="!isAuthenticated()">Login</a>
           <a class="navbar-item" ui-sref="register" ng-if="!isAuthenticated()">Register</a>
@@ -42,4 +41,4 @@
 
     <ui-view ng-if="isHomepage"></ui-view>
   </body>
-</html>
+  </html>

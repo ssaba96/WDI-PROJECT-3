@@ -1,15 +1,15 @@
-function MuseumsShowCtrl($scope, $http, $state) {
+function ProfileShowCtrl($scope, $http, $state) {
 
   $scope.data = {};
 
 
   $http({
     method: 'GET',
-    url: `/api/museums/${$state.params.id}`
+    url: `/api/${$state.params.id}`
   })
     .then(res => {
       $scope.museum = res.data;
     });
 }
 
-export default MuseumsShowCtrl;
+export default ProfileShowCtrl;
