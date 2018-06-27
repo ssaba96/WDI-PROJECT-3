@@ -20,25 +20,26 @@
     <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
       <div class="navbar-end">
         <a class="navbar-item" ui-sref="profileShow({ userId: currentUser._id })" ng-if="isAuthenticated()">Hi there {{ currentUser.username }}
-          <img ng-src="{{ currentUser.avatar }}" alt="user's avatar"></a>
-          <a class="navbar-item" ui-sref="museumsIndex">Catergories</a>
-          <a class="navbar-item" ui-sref="login" ng-if="!isAuthenticated()">Login</a>
-          <a class="navbar-item" ui-sref="register" ng-if="!isAuthenticated()">Register</a>
-          <a class="navbar-item" ng-click="logout()" ng-if="isAuthenticated()">Logout</a>
-        </div>
+          <img ng-src="{{ currentUser.avatar }}" alt="user's avatar">
+        </a>
+        <a class="navbar-item" ui-sref="museumsIndex">All the museums</a>
+        <a class="navbar-item" ui-sref="login" ng-if="!isAuthenticated()">Login</a>
+        <a class="navbar-item" ui-sref="register" ng-if="!isAuthenticated()">Register</a>
+        <a class="navbar-item" ng-click="logout()" ng-if="isAuthenticated()">Logout</a>
       </div>
-    </nav>
-
-    <div class="notification is-{{flashMessage.type}} is-flash" ng-class="{ 'is-active': flashMessage }">
-      {{ flashMessage.content }}
     </div>
+  </nav>
 
-    <section class="section" ng-if="!isHomepage">
-      <div class="container">
-        <ui-view></ui-view>
-      </div>
-    </section>
+  <div class="notification is-{{flashMessage.type}} is-flash" ng-class="{ 'is-active': flashMessage }">
+    {{ flashMessage.content }}
+  </div>
 
-    <ui-view ng-if="isHomepage"></ui-view>
-  </body>
-  </html>
+  <section class="section" ng-if="!isHomepage">
+    <div class="container">
+      <ui-view></ui-view>
+    </div>
+  </section>
+
+  <ui-view ng-if="isHomepage"></ui-view>
+</body>
+</html>

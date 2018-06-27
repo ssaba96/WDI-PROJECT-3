@@ -7,7 +7,7 @@ function bulmaCard() {
       image: '=',
       title: '=',
       subtitle: '=',
-      content: '='
+      postcode: '='
     }
   };
 }

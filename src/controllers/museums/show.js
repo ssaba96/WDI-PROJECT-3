@@ -4,7 +4,7 @@ function MuseumsShowCtrl($scope, $http, $state) {
 
   $http({
     method: 'GET',
-    url: `/api/${$state.params.id}`
+    url: `/api/museums/${$state.params.id}`
   })
     .then(res => {
       $scope.museum = res.data;
