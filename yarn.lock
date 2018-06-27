@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@angular/core@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-6.0.6.tgz#d7d9ee10bd895ad4115ca7ace40c678039d0bc32"
+  dependencies:
+    tslib "^1.9.0"
+
 "@uirouter/angularjs@^1.0.18":
   version "1.0.18"
   resolved "https://registry.yarnpkg.com/@uirouter/angularjs/-/angularjs-1.0.18.tgz#7ec481921c0c66dc93442b340779d733a49b0214"
@@ -81,6 +87,10 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-carousel@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/angular-carousel/-/angular-carousel-1.1.0.tgz#3e6940e68bd18a8f392fc431d97192ac348831d1"
+
 angular-filepicker@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/angular-filepicker/-/angular-filepicker-1.1.4.tgz#1293ad69087d1cb57767bcbad23c7e2d9a20adbc"
@@ -88,6 +98,14 @@ angular-filepicker@^1.1.4:
 angular-messages@^1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/angular-messages/-/angular-messages-1.7.2.tgz#77116d83a72a00234d8177de9837bc867321f25e"
+
+angular-touch@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/angular-touch/-/angular-touch-1.7.2.tgz#54ba21e67520b0fbf6a1c7a7cfa45fbd8fc59ef7"
+
+angular-ui-carousel@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/angular-ui-carousel/-/angular-ui-carousel-0.1.10.tgz#0a5b1066018b40e700b8c6ee34b0c97fc321952b"
 
 angular@^1.6.0:
   version "1.6.9"
@@ -3029,6 +3047,10 @@ inherits@2.0.1:
 ini@~1.3.0:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
+
+install@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/install/-/install-0.12.0.tgz#684dfe3a81f57fa4c2dcb7d4cbea4081ea66af98"
 
 internal-ip@1.2.0:
   version "1.2.0"
@@ -6102,6 +6124,10 @@ trim-right@^1.0.1:
   dependencies:
     glob "^6.0.4"
 
+tslib@^1.9.0:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
+
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
@@ -6162,6 +6188,10 @@ uglifyjs-webpack-plugin@^0.4.6:
     source-map "^0.5.6"
     uglify-js "^2.8.29"
     webpack-sources "^1.0.1"
+
+ui-carousel@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/ui-carousel/-/ui-carousel-0.2.0.tgz#ee93dfaeb7d5f7353b8d7ec215e9fab6ce16ae33"
 
 uid-number@^0.0.6:
   version "0.0.6"

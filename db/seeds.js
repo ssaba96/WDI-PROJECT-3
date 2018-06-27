@@ -16,31 +16,62 @@ mongoose.connect(dbURI, (err, db) => {
     .then(() => {
       console.log('User created');
       return Museum.create([{
-        name: 'London History Museum',
+        name: 'Art',
         category: 'science',
         address: 'London',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/london-history-museum.jpg'
-      }, { 
-        name: 'London Science Museum',
+        image: '/assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png'
+      }, {
+        name: 'History',
         category: 'science',
         address: 'London',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/science-images.jpeg'
+        image: '/assets/Museum/History/Bristish-Museum/FrontPage-british-museum.jpg'
       },{
-        name: 'London Science Museum',
+        name: 'Science',
         category: 'science',
         address: 'London',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/team-art-museum-hebe_02.jpg'
-      },{
-        name: 'London Art Museum',
-        category: 'science',
-        address: 'London',
-        location: { lat: 51.506724, lng: -0.080987 },
-        image: 'assets/london-natural-history-museum-earth-galleries.jpg'
-
-      }]);
+        image: '/assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg'
+      }
+      //   name: 'London Art Museum',
+      //   category: 'science',
+      //   address: 'London',
+      //   location: { lat: 51.506724, lng: -0.080987 },
+      //   image: ''
+      //
+      // },{
+      //   name: 'London Art Museum',
+      //   category: 'science',
+      //   address: 'London',
+      //   location: { lat: 51.506724, lng: -0.080987 },
+      //   image: ''
+      // },{
+      //   name: 'London Art Museum',
+      //   category: 'science',
+      //   address: 'London',
+      //   location: { lat: 51.506724, lng: -0.080987 },
+      //   image: ''
+      // },{
+      //   name: 'London Art Museum',
+      //   category: 'science',
+      //   address: 'London',
+      //   location: { lat: 51.506724, lng: -0.080987 },
+      //   image: ''
+      // },{
+      //   name: 'London Art Museum',
+      //   category: 'science',
+      //   address: 'London',
+      //   location: { lat: 51.506724, lng: -0.080987 },
+      //   image: ''
+      // },{
+      //   name: 'London Art Museum',
+      //   category: 'science',
+      //   address: 'London',
+      //   location: { lat: 51.506724, lng: -0.080987 },
+      //   image: ''
+      // }
+      ]);
     })
 
     .then(museums => console.log(`${museums.length} museum(s) created`))

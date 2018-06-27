@@ -36,5 +36,3 @@ function MainCtrl($scope, $auth, $state, $rootScope, $timeout, $transitions, $ht
 }
 
 export default MainCtrl;
-
-console.log('something');
