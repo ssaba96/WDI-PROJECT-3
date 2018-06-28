@@ -22,7 +22,8 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'WC2N 5DN',
         location: { lat: 51.506724, lng: -0.080987 },
         images: [
-          '/assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png'
+          '/assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png',
+          '/assets/Museum/Art/NationalArtGallery/NationalGallery-2.jpg'
         ]
       }, {
         name: 'The British Museum',
@@ -40,7 +41,9 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Broad St, Oxford',
         postcode: 'OX1 3AZ',
         location: { lat: 51.506724, lng: -0.080987 },
-        images: ['/assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg'
+        images: [
+          '/assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg',
+          '/assets/Museum/Science/Science-Oxford/Science-2.jpg'
         ]
       },{
         name: 'victoria and albert',
@@ -48,7 +51,9 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Cromwell Rd, Knightsbridge, London',
         postcode: 'SW7 2RL',
         location: { lat: 51.506724, lng: -0.080987 },
-        images: ['/assets/Museum/Art/V&A/frontPage-V&A.jpg'
+        images: [
+          '/assets/Museum/Art/V&A/frontPage-V&A.jpg',
+          '/assets/Museum/Art/V&A/V&A statue-1.jpg'
         ]
 
       },{
@@ -57,7 +62,9 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Cathays Park, Cardiff',
         postcode: 'CF10 3NP',
         location: { lat: 51.506724, lng: -0.080987 },
-        images: ['/assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg'
+        images: [
+          '/assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg',
+          '/assets/Museum/History/National-Musem-cardiff/National-Musem-cardiff-1.jpg'
         ]
       },{
         name: 'Winchester Science',
@@ -65,7 +72,10 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Address: Telegraph Way, Winchester',
         postcode: 'SO21 1HZ',
         location: { lat: 51.506724, lng: -0.080987 },
-        images: ['/assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg'
+        images: [
+          '/assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg',
+          '/assets/Museum/Science/WinchesterScience/science-centre-winchester-1.jpg'
+
         ]
       },{
         name: 'Wallace Collection',
@@ -73,7 +83,10 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Hertford House, Manchester Square, London',
         postcode: 'W1U 3BN',
         location: { lat: 51.506724, lng: -0.080987 },
-        images: ['/assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg'
+        images: [
+          '/assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg',
+          '/assets/Museum/Art/Wallace-Collection/wallace-collection-great-gallery-1.jpg'
+
         ]
       },{
         name: 'Museum of Childhood',
