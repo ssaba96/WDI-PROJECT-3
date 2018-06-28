@@ -3,9 +3,9 @@ a{
 }
 
 #userimage{
-      max-width: 20%;
-      border-style: solid;
-      border-radius: 3%;
+  max-width: 20%;
+  border-style: solid;
+  border-radius: 3%;
 }
 
 
@@ -40,13 +40,19 @@ a.navbar-item{
   text-align: left;
 }
 .background{
-  background-color: #808080;
+  background-color: black;
 
 }
 
 #homepage {
   img {
     opacity: 0.2;
+    height: 600px;
+    width: 1800px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
   .container {
@@ -57,6 +63,7 @@ a.navbar-item{
     right: 0;
     z-index: 1;
     display: flex;
+    text-align: left;
     align-items: center;
     justify-content: center;
 
@@ -64,12 +71,7 @@ a.navbar-item{
       color: white;
       font-size: 4rem;
       font-weight: bold;
-      text: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
   }
-}
-
-#home-img{
-  height: 100%;
-  width: 100%;
 }
