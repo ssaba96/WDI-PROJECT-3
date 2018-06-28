@@ -9,7 +9,7 @@ const reviewSchema = new mongoose.Schema({
 });
 
 const museumSchema = new mongoose.Schema({
-  image: { type: String, required: true },
+  images: [{ type: String, required: true }],
   location: {
     lat: { type: Number },
     lng: { type: Number }

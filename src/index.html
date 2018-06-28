@@ -5,7 +5,7 @@
   <title>MUSEUMS!</title>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdsDypPEp9X7T8qg-p41_pz_c2EYsqr8Y&libraries=places"></script>
 </head>
-<body ng-controller="MainCtrl">
+<body class="background" ng-controller="MainCtrl">
   <nav class="navbar is-fixed-top">
     <div class="navbar-brand">
       <a class="navbar-item" ui-sref="home"> MUSEUMS </a>
@@ -41,5 +41,14 @@
   </section>
 
   <ui-view ng-if="isHomepage"></ui-view>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

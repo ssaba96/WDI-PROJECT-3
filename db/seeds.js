@@ -21,13 +21,17 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Address: Trafalgar Square, London',
         postcode: 'WC2N 5DN',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png',
+        images: [
+          './assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png',
+          './assets/Museum/Art/NationalArtGallery/NationalGallery-2.jpg',
+          './assets/Museum/Art/NationalArtGallery/National-Gallery-2.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       }, {
         name: 'The British Museum',
@@ -35,13 +39,17 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Great Russell St, Bloomsbury, London',
         postcode: 'WC1B 3DG',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/Museum/History/Bristish-Museum/FrontPage-british-museum.jpg',
+        images: [
+          './assets/Museum/History/Bristish-Museum/FrontPage-british-museum.jpg',
+          './assets/Museum/History/Bristish-Museum/gold-collection.jpg',
+          './assets/Museum/History/Bristish-Museum/chessmen_1.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'Museum of the History of Science',
@@ -49,13 +57,17 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Broad St, Oxford',
         postcode: 'OX1 3AZ',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg',
+        images: [
+          './assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg',
+          './assets/Museum/Science/Science-Oxford/Science-2.jpg',
+          './assets/Museum/Science/Science-Oxford/Science-1.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'victoria and albert',
@@ -69,8 +81,13 @@ mongoose.connect(dbURI, (err, db) => {
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
-        }]
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
+        }],
+        images: [
+          './assets/Museum/Art/V&A/frontPage-V&A.jpg',
+          './assets/Museum/Art/V&A/V&A statue-1.jpg',
+          './assets/Museum/Art/V&A/V&A statue-2.jpg'
+        ]
 
       },{
         name: 'National Museum Cardiff',
@@ -78,13 +95,16 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Cathays Park, Cardiff',
         postcode: 'CF10 3NP',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg',
+        images: [
+          './assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg',
+          './assets/Museum/History/National-Musem-cardiff/National-Musem-cardiff-1.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'Winchester Science',
@@ -92,13 +112,17 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Address: Telegraph Way, Winchester',
         postcode: 'SO21 1HZ',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg',
+        images: [
+          './assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg',
+          './assets/Museum/Science/WinchesterScience/science-centre-winchester-1.jpg',
+          './assets/Museum/History/National-Musem-cardiff/National-Musem-cardiff-2.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'Wallace Collection',
@@ -106,13 +130,18 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Hertford House, Manchester Square, London',
         postcode: 'W1U 3BN',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: '/assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg',
+        images: [
+          './assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg',
+          './assets/Museum/Art/Wallace-Collection/wallace-collection-great-gallery-1.jpg',
+          './assets/Museum/Art/Wallace-Collection/wallace-collection-great-gallery-2.jpg'
+
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'Museum of Childhood',
@@ -120,13 +149,14 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Cambridge Heath Rd, London',
         postcode: 'E2 9PA',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: 'https://static.weddingvenues.com/venues/museum_childhood_1000px.jpg',
+        images: ['https://static.weddingvenues.com/venues/museum_childhood_1000px.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'The Cartoon Museum',
@@ -134,13 +164,14 @@ mongoose.connect(dbURI, (err, db) => {
         address: '35 Little Russell St, Bloomsbury, London',
         postcode: 'WC1A 2HH',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: 'http://ddk82aqeuj01i.cloudfront.net/2007/May/MO384880_393high.jpg',
+        images: ['http://ddk82aqeuj01i.cloudfront.net/2007/May/MO384880_393high.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'Museum of Brands, Packaging & Advertising',
@@ -148,13 +179,14 @@ mongoose.connect(dbURI, (err, db) => {
         address: '111-117 Lancaster Rd, London',
         postcode: 'W11 1QT',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: 'http://apollointeriors.com/wp-content/uploads/2016/03/07Mar2016-013-1800x938.jpg',
+        images: ['http://apollointeriors.com/wp-content/uploads/2016/03/07Mar2016-013-1800x938.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'Sherlock Holmes Museum',
@@ -162,13 +194,14 @@ mongoose.connect(dbURI, (err, db) => {
         address: '221b Baker St, Marylebone, London',
         postcode: 'NW1 6XE',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: 'http://kidrated.com/kidrated/wp-content/uploads/2015/06/Screen-Shot-2015-06-08-at-15.16.26-900x506.jpg',
+        images: ['http://kidrated.com/kidrated/wp-content/uploads/2015/06/Screen-Shot-2015-06-08-at-15.16.26-900x506.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'Imperial War Museum North',
@@ -176,13 +209,14 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Trafford Wharf Rd, Stretford, Manchester',
         postcode: 'M17 1TZ',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: 'http://s0.geograph.org.uk/geophotos/01/66/00/1660068_a17ff519.jpg',
+        images: ['http://s0.geograph.org.uk/geophotos/01/66/00/1660068_a17ff519.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'The keep military',
@@ -190,13 +224,13 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Bridport Rd, Dorchester',
         postcode: 'DT1 1RN',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: 'https://www.keepmilitarymuseum.org/images/homepage-boxes/the-keep-museum.jpg',
+        images: ['https://www.keepmilitarymuseum.org/images/homepage-boxes/the-keep-museum.jpg'],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'National Maritime Museum',
@@ -204,13 +238,14 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Park Row, London',
         postcode: 'SE10 9NF',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: 'https://cdn.londonandpartners.com/asset/a6e7fb61024e77ece41bf65251d8cb7f.jpg',
+        images: ['https://cdn.londonandpartners.com/asset/a6e7fb61024e77ece41bf65251d8cb7f.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
         name: 'Aberdeen Maritime Museum',
@@ -218,13 +253,14 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Shiprow, Aberdeen',
         postcode: 'AB11 5BY',
         location: { lat: 51.506724, lng: -0.080987 },
-        image: 'https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/02/Aberdeen-Maritime-Museum.jpg',
+        images: ['https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/02/Aberdeen-Maritime-Museum.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
           rating: 4,
           author: users[0],
-          photo: ''
+          photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       }
       ]);
