@@ -5,7 +5,7 @@ function AuthLoginCtrl($scope, $auth, $state, $rootScope) {
     $auth.login($scope.data)
       .then(res => {
         $rootScope.$broadcast('currentUser', res.data.user);
-        $state.go('museumsIndex');
+        $state.go('home');
       })
       .catch(() => {
         $rootScope.$broadcast('flashMessage', {
