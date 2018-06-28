@@ -1,56 +1,48 @@
 <div class="columns">
 
+  <bulma-card image="museum.image" title="museum.name" subtitle="museum.address" postcode="museum.postcode">
+  </bulma-card>
   <div class="column">
 
-    <bulma-card image="museum.image" title="museum.name" subtitle="museum.address" postcode="museum.postcode">
-
-  </bulma-card>
-
-    <hr />
-
-
-    <h4 class="title is-4">Reviews</h4>
-    <article class="media" ng-repeat="comment in musuem.comments">
+    <article class="media" ng-repeat="review in musuem.reviews">
       <div class="media-content">
         <div class="content">
-          <strong>{{ comment.author.username }}</strong>
+          <strong>{{ review.author.username }}</strong>
           <p>
-            {{ comment.content }}
+            {{ review.content }}
           </p>
-          <small>{{ '⭐️'.repeat(comment.content) }}</small>
+          <small>{{ '⭐️'.repeat(review.content) }}</small>
         </div>
-    </article>
-
-    <hr />
-
-    <form ng-submit="createComment()" ng-if="isAuthenticated()">
-      <div class="feild">
-        <label class="label">Leave a Review..</label>
-        <textarea class="textarea" ng-model="data.content"></textarea>
-      </div>
-
-      <div class="feild">
-        <div class="control">
-          <label class="label">Rating</label>
-          <div class="select">
-            <select ng-model="data.rating">
-              <option vaalue="">Please select</option>
-              <option value="1">⭐️</option>
-              <option value="2">⭐️⭐️</option>
-              <option value="3">⭐️⭐️⭐️</option>
-              <option value="4">⭐️⭐️⭐️⭐️</option>
-              <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
-            </select>
+      </article>
+      <hr />
+      <form ng-submit="createReview()" ng-if="isAuthenticated()">
+        <div class="field">
+          <label class="label">Leave a Review..</label>
+          <textarea class="column is-three-fifths" ng-model="data.content"></textarea>
+        </div>
+        <br>
+        <div class="field">
+          <div class="control">
+            <!-- <label class="label">Rating</label> -->
+            <div class="select">
+              <select ng-model="data.rating">
+                <option value="">Rating</option>
+                <option value="1">⭐️</option>
+                <option value="2">⭐️⭐️</option>
+                <option value="3">⭐️⭐️⭐️</option>
+                <option value="4">⭐️⭐️⭐️⭐️</option>
+                <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+              </select>
+            </div>
           </div>
         </div>
-      </div>
+        <br>
+        <button class="button is-primary">Submit</button>
+      </form>
+    </div>
 
-      <button class="button is-primary">Submit</button>
-    </form>
+    <div class="column">
+      <div google-map location="museum.location"></div>
+    </div>
+
   </div>
-
-  <div class="column">
-    <div google-map location="museum.location"></div>
-  </div>
-
-</div>

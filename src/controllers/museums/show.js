@@ -9,6 +9,15 @@ function MuseumsShowCtrl($scope, $http, $state) {
     .then(res => {
       $scope.museum = res.data;
     });
+
+  $scope.createReview = function() {
+    $http({
+      method: 'POST',
+      url: '/museums/:id/reviews',
+      data: $scope.data
+    })
+      .then(res => $scope.museum = res.data);
+  };
 }
 
 export default MuseumsShowCtrl;
