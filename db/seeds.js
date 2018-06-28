@@ -7,12 +7,12 @@ const { dbURI } = require('../config/environment');
 mongoose.connect(dbURI, (err, db) => {
   db.dropDatabase();
 
-  User.create({
+  User.create([{
     username: 'chavez',
     email: 'chavez@test.com',
     password: 'password',
     passwordConfirmation: 'password'
-  })
+  }])
     .then((users) => {
       console.log('User created');
       return Museum.create([{
@@ -22,11 +22,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'WC2N 5DN',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       }, {
         name: 'The British Museum',
@@ -35,11 +36,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'WC1B 3DG',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/History/Bristish-Museum/FrontPage-british-museum.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'Museum of the History of Science',
@@ -48,11 +50,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'OX1 3AZ',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'victoria and albert',
@@ -61,11 +64,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'SW7 2RL',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/Art/V&A/frontPage-V&A.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
 
       },{
@@ -75,11 +79,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'CF10 3NP',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'Winchester Science',
@@ -88,11 +93,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'SO21 1HZ',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'Wallace Collection',
@@ -101,11 +107,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'W1U 3BN',
         location: { lat: 51.506724, lng: -0.080987 },
         image: '/assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'Museum of Childhood',
@@ -114,11 +121,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'E2 9PA',
         location: { lat: 51.506724, lng: -0.080987 },
         image: 'https://static.weddingvenues.com/venues/museum_childhood_1000px.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'The Cartoon Museum',
@@ -127,11 +135,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'WC1A 2HH',
         location: { lat: 51.506724, lng: -0.080987 },
         image: 'http://ddk82aqeuj01i.cloudfront.net/2007/May/MO384880_393high.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'Museum of Brands, Packaging & Advertising',
@@ -140,11 +149,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'W11 1QT',
         location: { lat: 51.506724, lng: -0.080987 },
         image: 'http://apollointeriors.com/wp-content/uploads/2016/03/07Mar2016-013-1800x938.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'Sherlock Holmes Museum',
@@ -153,11 +163,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'NW1 6XE',
         location: { lat: 51.506724, lng: -0.080987 },
         image: 'http://kidrated.com/kidrated/wp-content/uploads/2015/06/Screen-Shot-2015-06-08-at-15.16.26-900x506.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'Imperial War Museum North',
@@ -166,11 +177,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'M17 1TZ',
         location: { lat: 51.506724, lng: -0.080987 },
         image: 'http://s0.geograph.org.uk/geophotos/01/66/00/1660068_a17ff519.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'The keep military',
@@ -179,11 +191,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'DT1 1RN',
         location: { lat: 51.506724, lng: -0.080987 },
         image: 'https://www.keepmilitarymuseum.org/images/homepage-boxes/the-keep-museum.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'National Maritime Museum',
@@ -192,11 +205,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'SE10 9NF',
         location: { lat: 51.506724, lng: -0.080987 },
         image: 'https://cdn.londonandpartners.com/asset/a6e7fb61024e77ece41bf65251d8cb7f.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       },{
         name: 'Aberdeen Maritime Museum',
@@ -205,11 +219,12 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'AB11 5BY',
         location: { lat: 51.506724, lng: -0.080987 },
         image: 'https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/02/Aberdeen-Maritime-Museum.jpg',
-        owner: users[1],
+        owner: users[0],
         reviews: [{
-          content: '',
+          content: 'Great Service',
           rating: 4,
-          author: users[0]
+          author: users[0],
+          photo: ''
         }]
       }
       ]);

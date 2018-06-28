@@ -13,10 +13,13 @@ function MuseumsShowCtrl($scope, $http, $state) {
   $scope.createReview = function() {
     $http({
       method: 'POST',
-      url: '/museums/:id/reviews',
+      url: `/api/museums/${$state.params.id}/reviews`,
       data: $scope.data
     })
-      .then(res => $scope.museum = res.data);
+      .then(res => {
+        $scope.museum = res.data;
+        $scope.data = {};
+      });
   };
 }
 

@@ -8,6 +8,7 @@ function indexRoute(req, res, next) {
 
 function showRoute(req, res, next) {
   Museum.findById(req.params.id)
+    .populate('reviews.author')
     .then(museum => res.json(museum))
     .catch(next);
 
