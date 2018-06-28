@@ -11,18 +11,8 @@
 
     <hr />
 
-    <div ng-if="isAuthenticated()">
-      <a ui-sref="museumsEdit({ id: museum._id })"
-      class="button">Edit</a>
-      <button class="button is-danger"
-      ng-click="deleteMuseum()">Delete</button>
 
-      <hr />
-
-    </div>
-
-
-    <h4 class="title is-4">Comments</h4>
+    <h4 class="title is-4">Reviews</h4>
     <article class="media" ng-repeat="comment in musuem.comments">
       <div class="media-content">
         <div class="content">
@@ -38,7 +28,7 @@
 
     <form ng-submit="createComment()" ng-if="isAuthenticated()">
       <div class="feild">
-        <label class="label">comment</label>
+        <label class="label">Leave a Review..</label>
         <textarea class="textarea" ng-model="data.content"></textarea>
       </div>
 
