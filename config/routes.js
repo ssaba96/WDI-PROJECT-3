@@ -12,6 +12,8 @@ router.route('/museums/:id')
   .get(museums.show)
   .put(secureRoute);
 
+router.post('/museums/:id/reviews', secureRoute, museums.reviewCreate);
+router.delete('/museums/:id/reviews/:reviewId', secureRoute, museums.reviewDelete);
 
 router.post('/register', auth.register);
 router.post('/login', auth.login);

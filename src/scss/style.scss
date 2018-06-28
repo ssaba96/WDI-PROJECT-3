@@ -44,6 +44,16 @@ a.navbar-item{
 
 }
 
+
+.review {
+  display: flex;
+  flex-direction: column;
+  #commentimage{
+    height: 100px;
+    width: 100px;
+  }
+}
+
 #homepage {
   img {
     opacity: 0.2;
