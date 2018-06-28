@@ -2,10 +2,10 @@
 
   <div class="column">
 
-
-    <ui-carousel slides="museums" ng-if="museums" autoplay="true" fade="true" autoplay-speed="2000" >
+    <h1 class="title">{{ museum.name }}</h1>
+    <ui-carousel slides="museum.images" ng-if="museum.images" fade="true">
       <carousel-item>
-        <bulma-card image="item.image" title="item.name" subtitle="item.address" content="item.postcode">
+        <img class="display-img" ng-src="{{ item }}" />
       </carousel-item>
     </ui-carousel>
 
@@ -67,3 +67,8 @@
   </div>
 
 </div>
+
+
+<!-- <bulma-card image="museum.images[1]" title="museum.name" subtitle="museum.address" content="museum.postcode">
+
+</bulma-card> -->

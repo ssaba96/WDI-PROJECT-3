@@ -7,3 +7,69 @@ a{
       border-style: solid;
       border-radius: 3%;
 }
+
+
+.display-img{
+  height: 100%;
+  width: 100%;
+}
+
+
+a.navbar-item{
+  background-color: white;
+  &:hover{
+    background-color: #AD974F;
+  }
+}
+
+.card-image{
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card{
+  height: 100%;
+  width: 100%;
+  border-style: outset;
+  border-color: brown;
+}
+
+.museum-name{
+  text-align: left;
+}
+.background{
+  background-color: #808080;
+
+}
+
+#homepage {
+  img {
+    opacity: 0.2;
+  }
+
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      text: white;
+    }
+  }
+}
+
+#home-img{
+  height: 100%;
+  width: 100%;
+}

@@ -1,16 +1,14 @@
-<section class="hero is-info is-large">
-  <div class="">
-    <div class="container">
-      <h1 class="title">
-        MUSEUMS
-      </h1>
-      <ui-carousel slides="museums" ng-if="museums" autoplay="true" fade="true" autoplay-speed="2000" >
-        <carousel-item>
-          <img ng-src="{{ item.image }}" alt="{{ item.name }}" />
-        </carousel-item>
-      </ui-carousel>
+<section class="section" id="homepage">
+  <ui-carousel slides="museums" ng-if="museums" autoplay="true" fade="true" autoplay-speed="2000" arrows="false">
+    <carousel-item>
+      <img id="home-img" ng-src="{{ item.images[0] }}" alt="{{ item.name }}" />
+    </carousel-item>
+  </ui-carousel>
+  <div class="container">
+    <h1 class="title">
+      MUSEUMS
+    </h1>
 
-    </div>
   </div>
 </section>
 

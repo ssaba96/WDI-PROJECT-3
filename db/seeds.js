@@ -22,8 +22,9 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'WC2N 5DN',
         location: { lat: 51.506724, lng: -0.080987 },
         images: [
-          '/assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png',
-          '/assets/Museum/Art/NationalArtGallery/NationalGallery-2.jpg'
+          './assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png',
+          './assets/Museum/Art/NationalArtGallery/NationalGallery-2.jpg',
+          './assets/Museum/Art/NationalArtGallery/National-Gallery-2.jpg'
         ]
       }, {
         name: 'The British Museum',
@@ -32,8 +33,9 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'WC1B 3DG',
         location: { lat: 51.506724, lng: -0.080987 },
         images: [
-          '/assets/Museum/History/Bristish-Museum/FrontPage-british-museum.jpg',
-          '/assets/Museum/History/Bristish-Museum/gold-collection.jpg'
+          './assets/Museum/History/Bristish-Museum/FrontPage-british-museum.jpg',
+          './assets/Museum/History/Bristish-Museum/gold-collection.jpg',
+          './assets/Museum/History/Bristish-Museum/chessmen_1.jpg'
         ]
       },{
         name: 'Museum of the History of Science',
@@ -42,8 +44,9 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'OX1 3AZ',
         location: { lat: 51.506724, lng: -0.080987 },
         images: [
-          '/assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg',
-          '/assets/Museum/Science/Science-Oxford/Science-2.jpg'
+          './assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg',
+          './assets/Museum/Science/Science-Oxford/Science-2.jpg',
+          './assets/Museum/Science/Science-Oxford/Science-1.jpg'
         ]
       },{
         name: 'victoria and albert',
@@ -52,8 +55,9 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'SW7 2RL',
         location: { lat: 51.506724, lng: -0.080987 },
         images: [
-          '/assets/Museum/Art/V&A/frontPage-V&A.jpg',
-          '/assets/Museum/Art/V&A/V&A statue-1.jpg'
+          './assets/Museum/Art/V&A/frontPage-V&A.jpg',
+          './assets/Museum/Art/V&A/V&A statue-1.jpg',
+          './assets/Museum/Art/V&A/V&A statue-2.jpg'
         ]
 
       },{
@@ -63,8 +67,8 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'CF10 3NP',
         location: { lat: 51.506724, lng: -0.080987 },
         images: [
-          '/assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg',
-          '/assets/Museum/History/National-Musem-cardiff/National-Musem-cardiff-1.jpg'
+          './assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg',
+          './assets/Museum/History/National-Musem-cardiff/National-Musem-cardiff-1.jpg'
         ]
       },{
         name: 'Winchester Science',
@@ -73,8 +77,9 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'SO21 1HZ',
         location: { lat: 51.506724, lng: -0.080987 },
         images: [
-          '/assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg',
-          '/assets/Museum/Science/WinchesterScience/science-centre-winchester-1.jpg'
+          './assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg',
+          './assets/Museum/Science/WinchesterScience/science-centre-winchester-1.jpg',
+          './assets/Museum/History/National-Musem-cardiff/National-Musem-cardiff-2.jpg'
 
         ]
       },{
@@ -84,8 +89,9 @@ mongoose.connect(dbURI, (err, db) => {
         postcode: 'W1U 3BN',
         location: { lat: 51.506724, lng: -0.080987 },
         images: [
-          '/assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg',
-          '/assets/Museum/Art/Wallace-Collection/wallace-collection-great-gallery-1.jpg'
+          './assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg',
+          './assets/Museum/Art/Wallace-Collection/wallace-collection-great-gallery-1.jpg',
+          './assets/Museum/Art/Wallace-Collection/wallace-collection-great-gallery-2.jpg'
 
         ]
       },{

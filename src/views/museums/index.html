@@ -29,10 +29,9 @@
 
 <div class="columns is-multiline">
   <div class="column is-one-third-desktop is-half-tablet" ng-repeat="museum in museums | filter: { name: search, category: category } | orderBy: sort">
-
     <a ui-sref="museumsShow({ id: museum._id })">
 
-      <bulma-card image="museum.images[0]" title="museum.name"></bulma-card>
+      <bulma-card class="museum-name" image="museum.images[0]" title="museum.name"></bulma-card>
 
     </a>
 
