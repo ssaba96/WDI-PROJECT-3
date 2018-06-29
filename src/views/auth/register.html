@@ -41,8 +41,8 @@
 
     <div class="field">
       <label class="label" for="avatar">Avatar</label>
-      <a><img ng-src="{{ data.avatar }}" src="/assets/default-avatar.png" alt="" file-picker ng-model="data.avatar"></a>
-      <p>Choose Your Avatar</p>
+      <a><img id="avatar-img" ng-src="{{ data.avatar }}" src="/assets/default-avatar.png" alt="" file-picker ng-model="data.avatar"></a>
+      <p id="avatar-choose">Choose Your Avatar</p>
 
       <div ng-messages="form.avatar.$error" ng-if="form.avatar.$dirty">
         <small ng-message="required">This field is required</small>
