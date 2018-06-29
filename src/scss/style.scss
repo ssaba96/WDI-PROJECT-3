@@ -1,0 +1,177 @@
+.section {
+  min-height: calc(100vh - 52px);
+}
+
+#avatar-choose{
+  color: black;
+}
+
+#avatar-img{
+  border-style: outset;
+  border-color: grey;
+}
+
+a{
+  text-decoration: none;
+}
+
+.all-the-museums {
+  .column {
+
+  .card {
+    background-color: #1C0A1A;
+  }
+
+}
+
+}
+
+.title {
+  font-family: 'Galada', cursive;
+}
+.review {
+  p {
+    color: black;
+  }
+}
+
+#home-page-section{
+  background-image: url('https://i.imgur.com/q43yjB2.jpg');
+  background-size: 80%;
+}
+
+.card-content{
+  background-color: #1C0A1A;
+  .content {
+    h4 {
+      font-family: 'Galada', cursive;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+#login-page{
+  margin: 10%;
+}
+
+#profile {
+
+  .title, li {
+    color: black;
+  }
+
+}
+.user-info{
+  font-family: 'Galada', cursive;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.user-image {
+img{
+  width: 300px;
+}
+}
+
+#user-image{
+  max-width: 70%;
+  border-style: solid;
+  border-radius: 3%;
+}
+
+.display-img{
+  height: 500px;
+  width: 900px;
+}
+
+.map{
+  height: 500px;
+}
+
+.notification{
+  background-color: transparent;
+}
+
+.navbar-item{
+color: white;
+}
+
+a.navbar-item{
+background-color: #1C0A1A;
+  &:hover{
+    background-color: #352933;
+    color: white;
+  }
+}
+
+#navbar-gold{
+background-color: #1C0A1A;
+}
+
+.card-image{
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card{
+  height: 100%;
+  width: 100%;
+  border-style: outset;
+  border-color: #AD974F;
+}
+
+.museum-name{
+  text-align: left;
+}
+.background{
+  background-color: white;
+
+}
+
+
+.review {
+  display: flex;
+  flex-direction: column;
+  #comment-image{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+#homepage {
+  background-color: black;
+  img {
+    opacity: 0.25;
+    height: 600px;
+    width: 1800px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      font-family: 'Galada', cursive;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+<div class="columns is-multiline">
+
+
+  <div class="column is-8" id="mapdirection">
+
+    <h1 class="title">{{ museum.name }}</h1>
+    <ui-carousel slides="museum.images" ng-if="museum.images" fade="true">
+      <carousel-item>
+        <img class="display-img" ng-src="{{ item }}" />
+      </carousel-item>
+    </ui-carousel>
+
+    <div id="reviewmap">
+      <div google-map location="museum.location"></div>
+    </div>
+
+  </div>
+
+  <div class="column is-4">
+    <h2 class="title">Reviews</h2>
+    <div class="review" ng-repeat="review in museum.reviews">
+      <p><strong>{{ review.author.username }}</strong></p>
+      <p>{{ review.content }}</p>
+      <small>{{ '⭐️'.repeat(review.rating) }}</small>
+      <img id="comment-image" src="{{ review.photo }}" alt="">
+    </div>
+    <hr />
+
+    <form ng-submit="createReview()" ng-if="isAuthenticated()">
+      <div class="field">
+        <label class="label">Leave a Review..</label>
+        <input class="input" ng-model="data.content" />
+      </div>
+      <div class="field">
+        <button class="button" file-picker ng-model="data.photo">📷 Attach a photo</button>
+        <img ng-if="data.photo" src="{{ data.photo }}"/>
+      </div>
+      <div class="field">
+        <div class="control">
+          <!-- <label class="label">Rating</label> -->
+          <div class="select">
+            <select ng-model="data.rating">
+              <option value="">Rating</option>
+              <option value="1">⭐️</option>
+              <option value="2">⭐️⭐️</option>
+              <option value="3">⭐️⭐️⭐️</option>
+              <option value="4">⭐️⭐️⭐️⭐️</option>
+              <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button class="button is-primary">Submit</button>
+    </form>
+    <br>
+
+
+  </div>
+
+  <div class="column is-6">
+
+
+  </div>
+</div>

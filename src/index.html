@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="museumsApi" class="has-navbar-fixed-top">
 <head>
   <meta charset="utf-8">
-  <title>WDI32 Group Project</title>
+  <title>MUSEUMS!</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdsDypPEp9X7T8qg-p41_pz_c2EYsqr8Y&libraries=places"></script>
 </head>
-<body>
+<body ng-controller="MainCtrl">
+  <nav class="navbar is-fixed-top" id="navbar-gold">
+    <div class="navbar-brand">
 
-  <h1>WDI32 Group Project</h1>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" ng-class="{ 'is-active': navbarOpen }" ng-click="toggleMenu()">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
+    <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
+
+      <div class="navbar-start">
+        <a class="navbar-item" ui-sref="home">Home</a>
+      </div>
+      <div class="navbar-end">
+        <a class="navbar-item" ui-sref="museumsIndex">All the museums</a>
+        <a class="navbar-item" ui-sref="login" ng-if="!isAuthenticated()">Login</a>
+        <a class="navbar-item" ui-sref="register" ng-if="!isAuthenticated()">Register</a>
+        <a class="navbar-item" ui-sref="profileShow({ userId: currentUser._id })" ng-if="isAuthenticated()">Hi there {{ currentUser.username }}
+          <img ng-src="{{ currentUser.avatar }}" alt="user's avatar">
+        </a>
+        <a class="navbar-item" ng-click="logout()" ng-if="isAuthenticated()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" id="home-page-section" ng-if="!isHomepage">
+    <div class="container">
+      <div class="notification is-{{flashMessage.type}} is-flash" ng-class="{ 'is-active': flashMessage }">
+        {{ flashMessage.content }}
+      </div>
+      <ui-view></ui-view>
+    </div>
+  </section>
+
+  <ui-view ng-if="isHomepage"></ui-view>
+  <!-- <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer> -->
 </body>
 </html>
