@@ -2,6 +2,15 @@
   min-height: calc(100vh - 52px);
 }
 
+#avatar-choose{
+  color: black;
+}
+
+#avatar-img{
+  border-style: outset;
+  border-color: grey;
+}
+
 a{
   text-decoration: none;
 }
@@ -40,6 +49,10 @@ a{
       text-decoration: none;
     }
   }
+}
+
+#login-page{
+ margin: 10%;
 }
 
 #profile {

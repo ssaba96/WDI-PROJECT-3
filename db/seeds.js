@@ -70,7 +70,7 @@ mongoose.connect(dbURI, (err, db) => {
           photo: 'https://i.imgur.com/7J3Choe.jpg'
         }]
       },{
-        name: 'victoria and albert',
+        name: 'Victoria And Albert',
         category: 'Art',
         address: 'Cromwell Rd, Knightsbridge, London',
         postcode: 'SW7 2RL',
