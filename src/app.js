@@ -4,6 +4,8 @@ import 'satellizer';
 import 'angular-messages';
 import 'filepicker-js';
 import 'angular-filepicker/dist/angular_filepicker';
+
+
 import 'angular-ui-carousel';
 import 'angular-ui-carousel/dist/ui-carousel.css';
 
@@ -26,6 +28,8 @@ import AuthRegisterCtrl from './controllers/auth/register';
 
 import bulmaCard from './directives/bulmaCard';
 import filePicker from './directives/filePicker';
+import googleMap from './directives/googleMap';
+import googleAutocomplete from './directives/googleAutocomplete';
 
 
 angular.module('museumsApi', [
@@ -46,5 +50,7 @@ angular.module('museumsApi', [
   .controller('AuthRegisterCtrl', AuthRegisterCtrl)
   .controller('MuseumsIndexCtrl', MuseumsIndexCtrl)
   .controller('MuseumsShowCtrl', MuseumsShowCtrl)
+  .directive('googleMap', googleMap)
+  .directive('googleAutocomplete', googleAutocomplete)
   .directive('filePicker', filePicker)
   .directive('bulmaCard', bulmaCard);

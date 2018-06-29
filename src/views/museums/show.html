@@ -1,7 +1,7 @@
-<div class="columns">
+<div class="columns is-multiline">
 
 
-  <div class="column is-8">
+  <div class="column is-8" id="mapdirection">
 
     <h1 class="title">{{ museum.name }}</h1>
     <ui-carousel slides="museum.images" ng-if="museum.images" fade="true">
@@ -10,8 +10,10 @@
       </carousel-item>
     </ui-carousel>
 
-    <!-- <bulma-card image="museum.image" title="museum.name" subtitle="museum.address" postcode="museum.postcode"> -->
-    </bulma-card>
+    <div id="reviewmap">
+      <div google-map location="museum.location"></div>
+    </div>
+
   </div>
 
   <div class="column is-4">
@@ -20,7 +22,7 @@
       <p><strong>{{ review.author.username }}</strong></p>
       <p>{{ review.content }}</p>
       <small>{{ '⭐️'.repeat(review.rating) }}</small>
-      <img id="commentimage" src="{{ review.photo }}" alt="">
+      <img id="comment-image" src="{{ review.photo }}" alt="">
     </div>
     <hr />
 
@@ -50,15 +52,13 @@
       </div>
       <button class="button is-primary">Submit</button>
     </form>
-
-    <div google-map location="museum.location"></div>
+    <br>
 
 
   </div>
 
+  <div class="column is-6">
+
+
+  </div>
 </div>
-
-
-<!-- <bulma-card image="museum.images[1]" title="museum.name" subtitle="museum.address" content="museum.postcode">
-
-</bulma-card> -->

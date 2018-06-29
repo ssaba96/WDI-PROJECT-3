@@ -16,11 +16,11 @@ mongoose.connect(dbURI, (err, db) => {
     .then((users) => {
       console.log('User created');
       return Museum.create([{
-        name: 'London Art Museum',
+        name: 'National Gallery',
         category: 'Art',
         address: 'Address: Trafalgar Square, London',
         postcode: 'WC2N 5DN',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.510585, lng: -0.128213 },
         images: [
           './assets/Museum/Art/NationalArtGallery/frontPage-nationalArtMuseum.png',
           './assets/Museum/Art/NationalArtGallery/NationalGallery-2.jpg',
@@ -38,7 +38,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'History',
         address: 'Great Russell St, Bloomsbury, London',
         postcode: 'WC1B 3DG',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.520081, lng: -0.126828 },
         images: [
           './assets/Museum/History/Bristish-Museum/FrontPage-british-museum.jpg',
           './assets/Museum/History/Bristish-Museum/gold-collection.jpg',
@@ -56,7 +56,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'science',
         address: 'Broad St, Oxford',
         postcode: 'OX1 3AZ',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.755085, lng: -1.255328 },
         images: [
           './assets/Museum/Science/Science-Oxford/FrontPage-ScienceOxford.jpg',
           './assets/Museum/Science/Science-Oxford/Science-2.jpg',
@@ -74,7 +74,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Art',
         address: 'Cromwell Rd, Knightsbridge, London',
         postcode: 'SW7 2RL',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.496819, lng: -0.172180 },
         image: '/assets/Museum/Art/V&A/frontPage-V&A.jpg',
         owner: users[0],
         reviews: [{
@@ -94,7 +94,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'History',
         address: 'Cathays Park, Cardiff',
         postcode: 'CF10 3NP',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.486325, lng: -3.176999 },
         images: [
           './assets/Museum/History/National-Musem-cardiff/frontPage-National-Museum-Cardiff.jpg',
           './assets/Museum/History/National-Musem-cardiff/National-Musem-cardiff-1.jpg'
@@ -111,7 +111,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'science',
         address: 'Address: Telegraph Way, Winchester',
         postcode: 'SO21 1HZ',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.060155, lng: -1.265250 },
         images: [
           './assets/Museum/Science/WinchesterScience/frontPage-WinchesterScience.jpeg',
           './assets/Museum/Science/WinchesterScience/science-centre-winchester-1.jpg',
@@ -129,7 +129,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Art',
         address: 'Hertford House, Manchester Square, London',
         postcode: 'W1U 3BN',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.518105, lng: -0.152822 },
         images: [
           './assets/Museum/Art/Wallace-Collection/frontPage-wallace-collection-.jpg',
           './assets/Museum/Art/Wallace-Collection/wallace-collection-great-gallery-1.jpg',
@@ -148,7 +148,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'children',
         address: 'Cambridge Heath Rd, London',
         postcode: 'E2 9PA',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.529788, lng: -0.054909 },
         images: ['https://static.weddingvenues.com/venues/museum_childhood_1000px.jpg'
         ],
         owner: users[0],
@@ -163,7 +163,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Children',
         address: '35 Little Russell St, Bloomsbury, London',
         postcode: 'WC1A 2HH',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.518435, lng: -0.125924 },
         images: ['http://ddk82aqeuj01i.cloudfront.net/2007/May/MO384880_393high.jpg'
         ],
         owner: users[0],
@@ -178,7 +178,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Design',
         address: '111-117 Lancaster Rd, London',
         postcode: 'W11 1QT',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.517215, lng: -0.210971 },
         images: ['http://apollointeriors.com/wp-content/uploads/2016/03/07Mar2016-013-1800x938.jpg'
         ],
         owner: users[0],
@@ -193,7 +193,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Other',
         address: '221b Baker St, Marylebone, London',
         postcode: 'NW1 6XE',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.524595, lng: -0.158770 },
         images: ['http://kidrated.com/kidrated/wp-content/uploads/2015/06/Screen-Shot-2015-06-08-at-15.16.26-900x506.jpg'
         ],
         owner: users[0],
@@ -208,7 +208,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Military',
         address: 'Trafford Wharf Rd, Stretford, Manchester',
         postcode: 'M17 1TZ',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 53.470502, lng: -2.298655 },
         images: ['http://s0.geograph.org.uk/geophotos/01/66/00/1660068_a17ff519.jpg'
         ],
         owner: users[0],
@@ -223,7 +223,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Military',
         address: 'Bridport Rd, Dorchester',
         postcode: 'DT1 1RN',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 50.715462, lng: -2.443574 },
         images: ['https://www.keepmilitarymuseum.org/images/homepage-boxes/the-keep-museum.jpg'],
         owner: users[0],
         reviews: [{
@@ -237,7 +237,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Maritime',
         address: 'Park Row, London',
         postcode: 'SE10 9NF',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 51.481490, lng: -0.005160 },
         images: ['https://cdn.londonandpartners.com/asset/a6e7fb61024e77ece41bf65251d8cb7f.jpg'
         ],
         owner: users[0],
@@ -252,7 +252,7 @@ mongoose.connect(dbURI, (err, db) => {
         category: 'Maritime',
         address: 'Shiprow, Aberdeen',
         postcode: 'AB11 5BY',
-        location: { lat: 51.506724, lng: -0.080987 },
+        location: { lat: 57.147209, lng: -2.094608 },
         images: ['https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/02/Aberdeen-Maritime-Museum.jpg'
         ],
         owner: users[0],
