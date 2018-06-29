@@ -149,7 +149,10 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Cambridge Heath Rd, London',
         postcode: 'E2 9PA',
         location: { lat: 51.529788, lng: -0.054909 },
-        images: ['https://static.weddingvenues.com/venues/museum_childhood_1000px.jpg'
+        images: [
+          'https://static.weddingvenues.com/venues/museum_childhood_1000px.jpg',
+          'https://cdn.londonandpartners.com/asset/vanda-museum-of-childhood-dolls-house-gallery-54fdcee78b6e06e9a3a31b501dda667a.jp',
+          'https://www.keatons.com/access-london/wp-content/uploads/2014/08/VandA_museum_of_childhood-content-image.jpg'
         ],
         owner: users[0],
         reviews: [{
@@ -164,7 +167,10 @@ mongoose.connect(dbURI, (err, db) => {
         address: '35 Little Russell St, Bloomsbury, London',
         postcode: 'WC1A 2HH',
         location: { lat: 51.518435, lng: -0.125924 },
-        images: ['http://ddk82aqeuj01i.cloudfront.net/2007/May/MO384880_393high.jpg'
+        images: [
+          'http://ddk82aqeuj01i.cloudfront.net/2007/May/MO384880_393high.jpg',
+          'https://themother-hood.com/wp-content/uploads/2018/01/The-Cartoon-Museum-2-1.jpg',
+          'https://themother-hood.com/wp-content/uploads/2018/01/The-Cartoon-Museum-1-1.jpg'
         ],
         owner: users[0],
         reviews: [{
@@ -179,7 +185,10 @@ mongoose.connect(dbURI, (err, db) => {
         address: '111-117 Lancaster Rd, London',
         postcode: 'W11 1QT',
         location: { lat: 51.517215, lng: -0.210971 },
-        images: ['http://apollointeriors.com/wp-content/uploads/2016/03/07Mar2016-013-1800x938.jpg'
+        images: [
+          'http://apollointeriors.com/wp-content/uploads/2016/03/07Mar2016-013-1800x938.jpg',
+          'https://media.timeout.com/images/105154308/1372/772/image.jpg',
+          'https://media.timeout.com/images/105154304/1372/772/image.jpg'
         ],
         owner: users[0],
         reviews: [{
@@ -194,7 +203,10 @@ mongoose.connect(dbURI, (err, db) => {
         address: '221b Baker St, Marylebone, London',
         postcode: 'NW1 6XE',
         location: { lat: 51.524595, lng: -0.158770 },
-        images: ['http://kidrated.com/kidrated/wp-content/uploads/2015/06/Screen-Shot-2015-06-08-at-15.16.26-900x506.jpg'
+        images: [
+          'http://kidrated.com/kidrated/wp-content/uploads/2015/06/Screen-Shot-2015-06-08-at-15.16.26-900x506.jpg',
+          'https://strawberrytours.com/images/LondonArticles/Museums/SherlockHolmesMuseum/gallery/Sherlock_Holmes_Museum_exhibit_Raenef.jpg',
+          'https://strawberrytours.com/cache/thumbs/80f17fe84d87ff44c4cf94d3b781988a.jpg'
         ],
         owner: users[0],
         reviews: [{
@@ -209,7 +221,9 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Trafford Wharf Rd, Stretford, Manchester',
         postcode: 'M17 1TZ',
         location: { lat: 53.470502, lng: -2.298655 },
-        images: ['http://s0.geograph.org.uk/geophotos/01/66/00/1660068_a17ff519.jpg'
+        images: [
+          'http://s0.geograph.org.uk/geophotos/01/66/00/1660068_a17ff519.jpg',
+          'https://www.gettysburgmuseumofhistory.com/wp-content/uploads/Battle-of-Gettysburg-Museum-American-Civil-War-sl3.jp', 'https://www.eventcomm.com/images/uploads/work_slides/IWM1-1920x750px.jpg'
         ],
         owner: users[0],
         reviews: [{
@@ -224,7 +238,11 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Bridport Rd, Dorchester',
         postcode: 'DT1 1RN',
         location: { lat: 50.715462, lng: -2.443574 },
-        images: ['https://www.keepmilitarymuseum.org/images/homepage-boxes/the-keep-museum.jpg'],
+        images: [
+          'https://www.keepmilitarymuseum.org/images/homepage-boxes/the-keep-museum.jpg',
+          'http://www.dorchesterdorset.com/graphics/museums/keep/charge.jpg',
+          'http://www.culture24.org.uk/asset_arena/9/76/21/512679/v0_large.jpg'
+        ],
         owner: users[0],
         reviews: [{
           content: 'Great Service',
@@ -238,7 +256,10 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Park Row, London',
         postcode: 'SE10 9NF',
         location: { lat: 51.481490, lng: -0.005160 },
-        images: ['https://cdn.londonandpartners.com/asset/a6e7fb61024e77ece41bf65251d8cb7f.jpg'
+        images: [
+          'https://cdn.londonandpartners.com/asset/a6e7fb61024e77ece41bf65251d8cb7f.jpg',
+          'https://assets.londonist.com/uploads/2016/08/i875/sea_things_2_-_national_maritime_museum__london.jpg',
+          'https://media-cdn.tripadvisor.com/media/photo-s/02/fb/44/0f/national-maritime-museum.jpg'
         ],
         owner: users[0],
         reviews: [{
@@ -253,7 +274,10 @@ mongoose.connect(dbURI, (err, db) => {
         address: 'Shiprow, Aberdeen',
         postcode: 'AB11 5BY',
         location: { lat: 57.147209, lng: -2.094608 },
-        images: ['https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/02/Aberdeen-Maritime-Museum.jpg'
+        images: [
+          'https://www.pressandjournal.co.uk/wp-content/uploads/sites/2/2015/02/Aberdeen-Maritime-Museum.jpg',
+          'https://www.visitabdn.com/assets/Uploads/_resampled/ScaleWidthWyIxOTAwIl0/Maritime-Museum-057.jpg',
+          'https://c1.staticflickr.com/5/4094/5409739451_af300f8781_b.jpg'
         ],
         owner: users[0],
         reviews: [{
