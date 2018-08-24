@@ -1,5 +1,4 @@
-# Project 3 : Museums
-## A MEAN Stack App
+# Project-3-MEAN Stack App : Museums
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
