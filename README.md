@@ -48,31 +48,30 @@ For this project I have used the following technologies:
 Home Page:
 <img width="1383" alt="1fhome" src="https://i.imgur.com/RXRrR3q.png">
 
-###### Search Page:
-###### User can 
+###### Search Page: When user clicks on 'All the museums' in the navbar, different museums show up.
 <img width="1217" alt="2view" src="https://i.imgur.com/7Sq9wI2.png">
-
+###### The user can browse different categories of the museums by clicking on 'All categories' drop down menu.
 <img width="1217" alt="2categories" src="https://i.imgur.com/AyC14kG.png">
-
+###### The user can also type the museums type or name in search bar to view specific ones.
 <img width="1217" alt="2search" src="https://i.imgur.com/FJZbA82.png">
 
-###### Museum Show Page:
+###### Museum Show Page: Once a museum is clicked, the user can then see the information about it including images, reviews and directions to the museum. In order to leave a review themselves, user has to login first by clicking 'Login' in the navbar. If the user is not already registered, they can do so by clicking 'Register' in the navabar.
 <img width="1217" alt="3show" src="https://i.imgur.com/bJbR8bn.png">
 
-###### Register Page:
+###### Register Page: The user has to fill out all the fields required for signing up. They can also choose the avatar which is optional.
 <img width="1378" alt="4register" src="https://i.imgur.com/k95CuHK.png">
 
-###### Login Page:
+###### Login Page: Once registered, the user is directed to login page.
 <img width="1218" alt="5login" src="https://i.imgur.com/K3zqfMy.png">
 
-###### User Comment enabled:
+###### User Comment enabled: The user can now see their name in the navbar and can now post a review.
 <img width="1218" alt="5comment" src="https://i.imgur.com/TspVglS.png">
 
 
 <img width="1218" alt="5user comment" src="https://i.imgur.com/aIZ4wMq.png">
 
 
-###### User's Profile:
+###### User's Profile: By clicking their username in navbar, the user is directed to their profile page where they can change the avatar.
 <img width="1218" alt="5reset" src="https://i.imgur.com/2EuTZAf.png">
 
 ---
