@@ -50,7 +50,6 @@ Home Page:
 <img width="1383" alt="1fhome" src="https://i.imgur.com/RXRrR3q.png">
 
 ###### Search Page:
-
 ###### User can 
 <img width="1217" alt="2view" src="https://i.imgur.com/7Sq9wI2.png">
 
