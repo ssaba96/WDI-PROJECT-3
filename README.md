@@ -31,6 +31,7 @@ For this project I have used the following technologies:
 - HTML
 - SCSS 
 - jQuery 
+- AngularJs
 - RESTful
 - Mongo 
 - Mongoose
@@ -51,6 +52,8 @@ Home Page:
 Search Page:
 
 <img width="1217" alt="2search" src="https://i.imgur.com/7Sq9wI2.png">
+
+<img width="1217" alt="2search" src="https://i.imgur.com/cULmFN5.png">
 
 Museum Show Page:
 
