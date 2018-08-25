@@ -50,10 +50,12 @@ Home Page:
 <img width="1383" alt="1fhome" src="https://i.imgur.com/RXRrR3q.png">
 
 Search Page:
+User can 
+<img width="1217" alt="2view" src="https://i.imgur.com/7Sq9wI2.png">
 
-<img width="1217" alt="2search" src="https://i.imgur.com/7Sq9wI2.png">
+<img width="1217" alt="2categories" src="https://i.imgur.com/AyC14kG.png">
 
-<img width="1217" alt="2search" src="https://i.imgur.com/AyC14kG.png">
+<img width="1217" alt="2categories" src="https://i.imgur.com/FJZbA82.png">
 
 Museum Show Page:
 
