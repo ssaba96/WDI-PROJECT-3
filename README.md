@@ -45,7 +45,7 @@ For this project I have used the following technologies:
 ---
 
 ### My Project screenshots
-#Home Page:
+# Home Page:
 
 <img width="1383" alt="1fhome" src="https://i.imgur.com/RXRrR3q.png">
 
