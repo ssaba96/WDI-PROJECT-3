@@ -50,8 +50,10 @@ Home Page:
 
 ###### Search Page: When user clicks on 'All the museums' in the navbar, different museums show up.
 <img width="1217" alt="2view" src="https://i.imgur.com/7Sq9wI2.png">
+
 ###### The user can browse different categories of the museums by clicking on 'All categories' drop down menu.
 <img width="1217" alt="2categories" src="https://i.imgur.com/AyC14kG.png">
+
 ###### The user can also type the museums type or name in search bar to view specific ones.
 <img width="1217" alt="2search" src="https://i.imgur.com/FJZbA82.png">
 
