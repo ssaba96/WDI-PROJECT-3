@@ -46,7 +46,6 @@ For this project I have used the following technologies:
 
 ### My Project screenshots
 Home Page:
-
 <img width="1383" alt="1fhome" src="https://i.imgur.com/RXRrR3q.png">
 
 ###### Search Page:
@@ -58,18 +57,15 @@ Home Page:
 <img width="1217" alt="2search" src="https://i.imgur.com/FJZbA82.png">
 
 ###### Museum Show Page:
-
 <img width="1217" alt="3show" src="https://i.imgur.com/bJbR8bn.png">
 
 ###### Register Page:
 <img width="1378" alt="4register" src="https://i.imgur.com/k95CuHK.png">
 
 ###### Login Page:
-
 <img width="1218" alt="5login" src="https://i.imgur.com/K3zqfMy.png">
 
 ###### User Comment enabled:
-
 <img width="1218" alt="5comment" src="https://i.imgur.com/TspVglS.png">
 
 
@@ -77,7 +73,6 @@ Home Page:
 
 
 ###### User's Profile:
-
 <img width="1218" alt="5reset" src="https://i.imgur.com/2EuTZAf.png">
 
 ---
