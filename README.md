@@ -45,35 +45,36 @@ For this project I have used the following technologies:
 ---
 
 ### My Project screenshots
-Home Page:
+#Home Page:
 
 <img width="1383" alt="1fhome" src="https://i.imgur.com/RXRrR3q.png">
 
 Search Page:
+
 User can 
 <img width="1217" alt="2view" src="https://i.imgur.com/7Sq9wI2.png">
 
 <img width="1217" alt="2categories" src="https://i.imgur.com/AyC14kG.png">
 
-<img width="1217" alt="2categories" src="https://i.imgur.com/FJZbA82.png">
+<img width="1217" alt="2search" src="https://i.imgur.com/FJZbA82.png">
 
 Museum Show Page:
 
-<img width="1217" alt="3step2" src="https://i.imgur.com/bJbR8bn.png">
+<img width="1217" alt="3show" src="https://i.imgur.com/bJbR8bn.png">
 
 Register Page:
-<img width="1378" alt="4points" src="https://i.imgur.com/k95CuHK.png">
+<img width="1378" alt="4register" src="https://i.imgur.com/k95CuHK.png">
 
 Login Page:
 
-<img width="1218" alt="5reset" src="https://i.imgur.com/K3zqfMy.png">
+<img width="1218" alt="5login" src="https://i.imgur.com/K3zqfMy.png">
 
 User Comment enabled:
 
-<img width="1218" alt="5reset" src="https://i.imgur.com/TspVglS.png">
+<img width="1218" alt="5comment" src="https://i.imgur.com/TspVglS.png">
 
 
-<img width="1218" alt="5reset" src="https://i.imgur.com/aIZ4wMq.png">
+<img width="1218" alt="5user comment" src="https://i.imgur.com/aIZ4wMq.png">
 
 
 User's Profile:
