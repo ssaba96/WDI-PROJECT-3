@@ -74,7 +74,7 @@ Home Page:
 
 
 ###### User's Profile: By clicking their username in navbar, the user is directed to their profile page where they can change the avatar.
-<img width="1218" alt="5reset" src="https://i.imgur.com/2EuTZAf.png">
+<img width="1218" alt="5profile" src="https://i.imgur.com/2EuTZAf.png">
 
 ---
 
